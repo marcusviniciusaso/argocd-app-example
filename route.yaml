@@ -1,0 +1,15 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: hello
+  labels:
+    app: hello
+spec:
+  host: hello.apps.dev-hub-treinamento.rhbr-lab.com
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
+  to:
+    kind: Service
+    name: hello
