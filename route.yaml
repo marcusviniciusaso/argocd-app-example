@@ -5,7 +5,7 @@ metadata:
   labels:
     app: hello
 spec:
-  host: hello.apps.dev-hub-treinamento.rhbr-lab.com
+  host: hello.apps.cluster
   port:
     targetPort: 8080
   tls:
